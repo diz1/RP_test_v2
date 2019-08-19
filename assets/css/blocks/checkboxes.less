@@ -1,0 +1,36 @@
+// main: ../style.less
+
+input[type="checkbox"] {
+    display: none;
+
+    &+label {
+        display: block;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+    }
+    
+    &+ label:before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icons/chkbx_unchk.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 40px;
+        top: 72px;
+    }
+
+    &:checked + label:before {
+        content: '';
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/icons/chkbx_chk.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 40px;
+        top: 72px;
+    }
+}

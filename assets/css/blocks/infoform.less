@@ -1,0 +1,74 @@
+// main: ../style.less
+
+.infoform {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.infoform__first {
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.infoform__item {
+    width: 340px;
+    position: relative;
+    margin-top: 18px;
+
+    &--description {        
+        width: 100%;
+        margin-top: 82px;
+        position: relative;
+    }
+}
+
+.infoform__description{
+    padding: 25px 0 0 15px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #eaeaee;
+    width: 100%;
+
+    font-size: 16px;
+    resize: none;
+}
+
+.infoform__input {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #eaeaee;
+    width: 100%;
+    position: absolute;
+    height: 55px;
+
+    padding: 25px 0 0 15px;
+    font-size: 16px;
+}
+
+.infoform__title {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    z-index: 1;
+    font-size: 13px;
+    opacity: .75;
+    user-select: none;
+}
+
+.infoform__description:focus {
+    box-shadow: 0 0 0 3px @lt-blue;
+    outline: none;
+}
+
+.infoform__input:focus {
+    box-shadow: 0 0 0 3px @lt-blue;
+    outline: none;
+}
+
+.infoform__input:focus + label,
+.infoform__description:focus + label {
+    font-weight: 500;
+    color: #2196f3;
+}

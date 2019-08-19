@@ -1,0 +1,42 @@
+// compress: true
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic-ext');
+@import "vars.less";
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    background-color: @grey;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+::placeholder {
+    color: @phold;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+button {
+    font-weight: 16px;
+    font-weight: 500;
+}
+
+/* Blocks */
+
+@import "blocks/container.less";
+@import "blocks/header.less";
+@import "blocks/infoform.less";
+@import "blocks/btn.less";
+@import "blocks/info.less";
+@import "blocks/warning.less";
+@import "blocks/content.less";
+@import "blocks/messengers.less";
+@import "blocks/checkboxes.less";

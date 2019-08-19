@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Test ROSPARTNER</title>
+</head>
+<body>
+<div class="container">
+    <section class="header">
+        <h2 class="header__title">Основная информация</h2>
+        <p class="header__description">Sed ut perspiciatis, <a class="header__link" href="#">unde omnis iste</a> natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur.</p>
+    </section>
+    <form action="#" class="infoform">
+        <div class="infoform__first">
+            <div class="infoform__item">
+                <input type="text" class="infoform__input" placeholder="Введите название">
+                <label class="infoform__title">Название группы</label>
+            </div>
+            <div class="infoform__item">
+                <input type="text" class="infoform__input" placeholder="Введите название">
+                <label class="infoform__title">ФИО ответственного</label>
+            </div>
+            <div class="infoform__item">
+                <input type="text" class="infoform__input" placeholder="Введите название">
+                <label class="infoform__title">Email для входа</label>
+            </div>
+        </div>
+        <div class="infoform__second">
+            <div class="infoform__item--description">
+                <textarea class="infoform__description" name="description" rows="4" placeholder="Введите краткое и емкое описание для рабочей группы"></textarea>
+                <label class="infoform__title">Описание рабочей группы</label>
+            </div>
+        </div>
+    </form>
+    <div class="buttons">
+        <button class="button submit" type="submit">Сохранить</button>
+        <button class="button reset" type="reset">Отмена</button>
+    </div>
+    <section class="content">
+        <div class="info">
+            <div class="info__title">Управление уведомлениями</div>
+        </div>
+        <div class="warning">
+            <img src="#" alt="" class="warning__img">
+            <div class="warning__inner">
+                <div class="warning__title">Внимание!</div>
+                <div class="warning__description">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem.</div>
+            </div>
+        </div>
+        <div class="messengers">
+            <div class="messengers__item">
+                <div class="messengers__icon">
+                    <div class="messengers__icon--icon">
+                        <img src="assets/images/icons/msgs/tg.png" alt="">
+                    </div>
+                    <div class="messengers__icon--status active"></div>
+                    <div class="messengers__icon--content">Telegramm</div>
+                </div>
+                <div class="messengers__action">
+                    <button class="button disable">Отключить аккаунт</button>
+                    <input class="checkbox" type="checkbox" name="services" id="#" checked>
+                    <label class="service__chk active">Только служебные</label>
+                </div>
+            </div>
+            <div class="messengers__item">
+                <div class="messengers__icon">
+                    <div class="messengers__icon--icon">
+                        <img src="assets/images/icons/msgs/icq.png" alt="">
+                    </div>
+                    <div class="messengers__icon--status"></div>
+                    <div class="messengers__icon--content">ICQ</div>
+                </div>
+                <div class="messengers__action">
+                    <div class="first__action">1. Скопируйте команду авторизации</div>
+                    <div class="second__action">2. Перейдите в чат и отправьте команду боту</div>
+                </div>
+            </div>
+            <div class="messengers__item">
+                <div class="messengers__icon">
+                    <div class="messengers__icon--icon">
+                        <img src="assets/images/icons/msgs/skype.png" alt="">
+                    </div>
+                    <div class="messengers__icon--status"></div>
+                    <div class="messengers__icon--content">Skype</div>
+                </div>
+                <div class="messengers__action">
+                    <div class="first__action">1. Скопируйте команду авторизации</div>
+                    <div class="second__action">2. Перейдите в чат и отправьте команду боту</div>
+                </div>
+            </div>
+            <div class="messengers__item">
+                <div class="messengers__icon">
+                    <div class="messengers__icon--icon">
+                        <img src="assets/images/icons/msgs/slack.png" alt="">
+                    </div>
+                    <div class="messengers__icon--status active"></div>
+                    <div class="messengers__icon--content">Slack</div>
+                </div>
+                <div class="messengers__action">
+                    <button class="button disable">Отключить аккаунт</button>
+                    <input type="checkbox" name="services" id="#">
+                    <label class="service__chk active">Только служебные</label>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.warning {
+    margin-top: 20px;
+}
+
+.warning__inner {
+    background: linear-gradient(-25deg, #ffa3a4 45%, #ff7da7 55%);
+    border-radius: 6px;
+}
+
+.warning__description {
+    padding: 10px 10px 15px 20px;
+    font-size: 16px;
+    color: @white;
+    font-weight: 400;
+}
+
+.warning__title {
+    font-size: 18px;
+    color: @white;
+    font-weight: 700;
+    padding: 11px 0 0 28px; 
+}
+
+.warning__title:before {
+    content: "";
+    display: block;
+    background: url(../images/icons/report.png) no-repeat;
+    width: 70px;
+    height: 73px;
+    float: left;
+    margin: 3px 10px 0 0;
+    opacity: 0.37;
+    border-right: 1px solid #ff84ab;
+    background-position: 15% 50%;
+    box-shadow: inset -1px 0px 0 0px #f2779f;
+}
